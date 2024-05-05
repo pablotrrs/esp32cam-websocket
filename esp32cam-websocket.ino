@@ -1,3 +1,4 @@
+#include "secrets.h"
 #include "esp_camera.h"
 #include <WiFi.h>
 #include "DHT.h"
@@ -9,9 +10,9 @@
 #define DHT_PIN 2
 #define FLASH_PIN 4
 
-const char* ssid = "SSID";
-const char* password = "PSWD";
-const char* websocket_server = "ws://x.x.x.x:8885/";
+const char* ssid = NETWORK_NAME;
+const char* password = PASSWORD;
+const char* websocket_server = SERVER;
 
 float hmem = 0;
 float tmem = 0;
